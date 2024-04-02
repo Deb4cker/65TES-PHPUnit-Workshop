@@ -1,0 +1,14 @@
+{
+  "name": "tes/65tes-workshop",
+  "require": {
+    "monolog/monolog": "^2.0",
+    "phpunit/phpunit": "^9.0",
+    "phpunit/php-code-coverage": "^9.2"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
