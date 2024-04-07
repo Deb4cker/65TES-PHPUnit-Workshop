@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'tes/65tes-workshop',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'dad7ee437d419125641bb5ddd2997bdce1ea493a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -278,9 +278,9 @@
             'dev_requirement' => false,
         ),
         'tes/65tes-workshop' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'dad7ee437d419125641bb5ddd2997bdce1ea493a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
