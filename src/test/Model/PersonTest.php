@@ -5,6 +5,7 @@ namespace test\Model;
 use DateTime;
 use PHPUnit\Framework\TestCase;
 use workshop\Model\Hotel;
+use workshop\Model\MockPerson;
 use workshop\Model\Person;
 
 class PersonTest extends TestCase
@@ -99,5 +100,12 @@ class PersonTest extends TestCase
         $this->assertNotNull($person);
         $this->assertEquals($personTestString, $person);
     }
+    public function testMockPerson() : void
+    {
+        $person = new MockPerson();
 
+        $this->assertNotNull($person, "Person must not be null");
+        $this->assertNotEquals('Marcio', $person->getName(), "Person name must be the same in the input.");
+        $this->assertNotEquals(21, $person->getAge(),"Person age must be the same in the input.");
+    }
 }
