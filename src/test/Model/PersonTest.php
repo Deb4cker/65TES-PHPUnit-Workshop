@@ -106,10 +106,15 @@ class PersonTest extends TestCase
     }
     public function testMockPerson() : void
     {
-        $person = new MockPerson("Joao", 12);
+        $person = new MockPerson();
+        $name = "Marcio";
+        $id = 01;
+        $age = 21;
 
         $this->assertNotNull($person, "Person must not be null");
-        $this->assertNotEquals("Marcio", $person->getName(), "Person name must be the same in the input.");
-        $this->assertNotEquals(21, $person->getAge(),"Person age must be the same in the input.");
+        $this->assertEquals($name, $person->getName(), "Person name must be the same in the input.");
+        $this->assertEquals($age, $person->getAge(),"Person age must be the same in the input.");
+        $this->assertEquals($id, $person->getId(),"Person id must be the same in the input." );
+        $this->assertNotEquals("", $person->__toString(), "String mustn't be the same in the input");
     }
 }
