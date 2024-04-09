@@ -11,6 +11,7 @@ class ExceptionTestHandlerTest extends TestCase
     public function testException(): void
     {
         $this->expectException(TypeError::class);
+
         $this->functionThatWillReceiveAnInvalidArgument("A");
     }
 

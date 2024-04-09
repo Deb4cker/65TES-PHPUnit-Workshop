@@ -4,21 +4,21 @@ namespace workshop\Model;
 
 class MockPerson extends Person
 {
-    public function getId(): int
+    #[\Override] public function getId(): int
     {
         return 01;
     }
 
-    public function getName(): string
+    #[\Override] public function getName(): string
     {
-        return 'Marcio';
+        return "Marcio";
     }
 
-    public function getAge(): int
+    #[\Override] public function getAge(): int
     {
         return 21;
     }
-    public function __toString(): string
+    #[\Override] public function __toString(): string
     {
         return "Id: 01, Name: Marcio, Age: 21, Reservations: ";
     }

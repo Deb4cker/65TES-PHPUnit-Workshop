@@ -8,12 +8,27 @@ class DataProviderTestSuiteTest extends TestCase
 {
 
     /**
+     * @before
+     */
+    public function beforeEach() :void
+    {
+            $this->assertTrue(1 + 1 == 2);
+    }
+
+    /**
+     * @after
+     */
+    public function afterEach() :void
+    {
+        $this->assertTrue(1 + 1 == 2);
+    }
+
+    /**
      * @dataProvider additionProvider
      */
     public function testAdd(int $result){
 
         $this->assertSame($result, 1);
-
     }
 
     public function additionProvider(): array

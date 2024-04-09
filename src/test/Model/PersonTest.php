@@ -10,6 +10,10 @@ use workshop\Model\Person;
 
 class PersonTest extends TestCase
 {
+
+    /**
+     * @covers workshop\Model\Person
+     */
     public function testMustCreatePerson(): void
     {
         $name = "Marcio";
@@ -102,10 +106,10 @@ class PersonTest extends TestCase
     }
     public function testMockPerson() : void
     {
-        $person = new MockPerson();
+        $person = new MockPerson("Joao", 12);
 
         $this->assertNotNull($person, "Person must not be null");
-        $this->assertNotEquals('Marcio', $person->getName(), "Person name must be the same in the input.");
+        $this->assertNotEquals("Marcio", $person->getName(), "Person name must be the same in the input.");
         $this->assertNotEquals(21, $person->getAge(),"Person age must be the same in the input.");
     }
 }
